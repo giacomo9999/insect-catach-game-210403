@@ -1,0 +1,21 @@
+.flex-div {
+  display: flex;
+}
+
+p {
+  margin: 5px auto;
+}
+
+img {
+  margin: 5px auto;
+  /* border: 2px solid red; */
+}
+
+button {
+  margin: 5px;
+  width: 75px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
