@@ -34,7 +34,7 @@ p {
 }
 
 .screen.up {
-  margin-top: -200vh;
+  margin-top: -100vh;
 }
 
 .btn {
@@ -88,4 +88,63 @@ p {
   height: 100px;
   padding: 5px 0;
   stroke: 2px greenyellow;
+}
+
+.game-container {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  transition: transform 0.4s ease-in;
+}
+
+.message.visible {
+  transform: translate(-50%, 150%);
+  opacity: 1;
+}
+
+.insect {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.insect.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+  width: 150px;
+  height: 150px;
 }
